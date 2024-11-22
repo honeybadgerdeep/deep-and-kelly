@@ -1,0 +1,40 @@
+.card-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    .card {
+        text-decoration: none;
+        background: #3083b3;
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            width: 450px;
+        }
+
+        @media (max-width: 768px) {
+            width: 200px;
+        }
+
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+    }
+
+    a:visited,
+    a {
+        color: white;
+        text-decoration: none;        
+    }
+    
+}
+

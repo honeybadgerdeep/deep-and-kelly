@@ -1,0 +1,92 @@
+#getting-married {
+    margin-top: 50px;
+    padding-top: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('img/large_12.jpg');
+    background-position: center bottom;
+    color: white;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        height: calc(100vh - 200px);
+    }
+
+    @media screen and (min-width: 768px) {
+        height: calc(100vh - 250px);
+    }
+
+    .title {
+
+        @media screen and (min-height: 750px) and (max-width: 950px) {
+            margin-top: 180px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 64px;
+            font-weight: 200;
+        }
+
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+}
+#content {
+    height: 100%;
+    margin-bottom: 50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    overflow-y: auto;
+
+    @media screen and (max-width: 768px) {
+        font-size: 0.8em;
+    }
+
+    #timeline-info {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        .event-display {
+            font-weight: 300;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .vertical {
+            height: 150px;
+            width: 0.5px;
+            background: black;
+        }
+    }
+
+    #day-of-details {
+        margin-top: 25px;
+        outline: none;
+        background: black;
+        border: none;
+        border-radius: 28.5px;
+        padding: 15px;
+        font-family: Josefin Sans;
+        cursor: pointer;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.35em;
+            font-weight: 350;    
+        }
+    }
+
+    #day-of-details:hover {
+        background: rgba(0,0,0,0.8);
+    }
+}

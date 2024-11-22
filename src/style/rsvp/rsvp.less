@@ -1,0 +1,155 @@
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    .search-input {
+        width: 100%;
+        padding: 0.75rem 0.2rem;
+        font-size: 1.1rem;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .guest-group {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background: white;
+        cursor: pointer;
+
+        .main-guest {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+            justify-content: space-between;
+
+            h3 {
+                margin: 0;
+            }
+
+            .pending {
+                color: #666;
+                font-size: 0.9rem;
+                font-style: italic;
+            }
+        }
+
+        .group-members {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+
+            h4 {
+                margin: 0 0 0.5rem 0;
+                color: #666;
+                font-size: 0.9rem;
+            }
+
+            .member {
+                padding: 0.25rem 0;
+                color: #444;
+                text-align: left;
+            }
+        }
+    }
+
+    .loading {
+        text-align: center;
+        color: #666;
+        padding: 1rem;
+    }
+
+    .selected-guest {
+        border: 5px solid black;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .proceed-button {
+        background-color: #3083b3;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #2a6f97;
+        }
+
+        &:active {
+            background-color: #1f4e6b;
+        }
+    }
+}
+
+
+.rsvp-container {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+
+        label {
+            font-weight: 500;
+        }
+
+        textarea {
+            width: 100%;
+
+            @media screen and (max-width: 768px) {
+                width: 90%;                
+            }
+
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            background: none;
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        button {
+            background-color: #3083b3;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #2a6f97;
+            }
+
+            &:active {
+                background-color: #1f4e6b;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        #next {
+            float: right;
+        }
+
+        #previous {
+            float: left;
+        }
+
+        #submit {
+            float: right;
+        }
+    }
+
+    #rsvp-submitted-msg {
+        text-align: center;
+    }
+}
