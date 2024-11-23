@@ -24,14 +24,6 @@
             answer: `For both Saturday + Sunday we recommend that you aim to arrive about 15-30 minutes before the starting ceremonies to ensure you are seated on time! Please check the schedule tab for specific timing of when the ceremonies start for each day!`
         },
         {
-            question: 'What is the order of events for Saturday?',
-            answer: `<ul class='schedule-list'><li>Ceremony: 11 AM - 12 PM</li> <li>Cocktail Hour: 12 PM - 1 PM</li> <li>Lunch + Dancing + Activities: 1 PM - 3 PM</li> <li>Grand exit: 3 PM</li></ul>`
-        },
-        {
-            question: 'What is the order of events for Sunday?',
-            answer: `<ul class='schedule-list'><li>Ceremony: 2PM - 4PM</li> <li>Performances + Toasts: 5PM - 7PM</li> <li>Dinner + Dancing: 8PM - 11PM</li> <li>Grand exit: 11PM</li></ul>`
-        },
-        {
             question: 'What is the dress code?',
             answer: `We’d love to see our friends + family get dressed up for our big day. The minimum dress code is formal attire. Given that our wedding is multiple days + multicultural, we are inviting our guests to share in the expression of the cultures through what they wear. If you are curious as to what that looks like for traditionally formal western or Indian attire please visit our <a href='/fashion'>fashion</a> tab on the website! This page will also detail what NOT to wear!`
         },
@@ -111,7 +103,7 @@
             {#if displayColors}
                 <div class="color-tile-container">
                     <div class="tiles">
-                        {#each ColorsToAvoid['Indian'] as color}
+                        {#each ColorsToAvoid['Western Formal'] as color}
                             <div class="color-tile" style="background-color: {color.cssColor}">{color.color}</div>
                         {/each}
                     </div>
@@ -119,7 +111,7 @@
                 <p class='please-avoid'>(Saturday)</p>
                 <div class="color-tile-container">
                     <div class="tiles">
-                        {#each ColorsToAvoid['Western Formal'] as color}
+                        {#each ColorsToAvoid['Indian'] as color}
                             <div class="color-tile" style="background-color: {color.cssColor}">{color.color}</div>
                         {/each}
                     </div>
