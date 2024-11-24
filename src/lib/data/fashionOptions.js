@@ -14,6 +14,7 @@ export var ColorsToAvoid = {
     [Culture.Indian]: [
         { color: 'Red', cssColor: '#FF0000' },
         { color: 'White', cssColor: '#FFFFFF' },
+        { color: 'Yellow', cssColor: '#FFFF00' },
     ]
 }
 

@@ -46,7 +46,7 @@
       </div>
     </div>
     
-    <div class="section">
+    <div class="section" id='hotels'>
       <h2>Hotels</h2>
       <ul>
         <li><a target="_blank" href="https://www.hilton.com/en/hotels/sjcfcgi-hilton-garden-inn-fremont-milpitas/">Hilton Garden Inn</a> | 15 min from Oasis | 35 min from Stonebrae</li>
@@ -59,7 +59,7 @@
       </ul>
     </div>
 
-    <div class="section">
+    <div class="section" id='airbnbs'>
       <h2>AirBNBs</h2>
       <ul>
         <li><a target="_blank" href="https://www.airbnb.com/s/Fremont--CA--United-States/homes">Fremont</a></li>
@@ -138,6 +138,24 @@
     @media screen and (max-width: 768px) {
       .section ul {
         font-size: 0.8em;
+        text-align: left;
+        font-weight: 300;
+        margin-bottom: 50px;
+        list-style-type: none;
+      }
+
+      .section h2 {
+        text-align: center;
+      }
+
+      #hotels ul {
+        padding-left: 10px;
+      }
+
+      #airbnbs ul {
+        text-align: center;
+        font-size: 1.5em;
+        padding: 0;
       }
 
       #map {

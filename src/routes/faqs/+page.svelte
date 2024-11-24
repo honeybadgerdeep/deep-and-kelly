@@ -13,15 +13,15 @@
         },
         {
             question: 'Where is the wedding?',
-            answer: `On Saturday, the western wedding is taking place at Stonebrae Country Club in Hayward, California (202 Country Club Dr, Hayward, CA 94542) On Sunday, the Indian wedding is taking place at Oasis Palace in Newark, California (35145 Newark Blvd, Newark, CA 94560). Please check the schedule tab for specific timing of when to arrive for each day!`
+            answer: `On Saturday, the western wedding is taking place at Stonebrae Country Club in Hayward, California (202 Country Club Dr, Hayward, CA 94542) On Sunday, the Indian wedding is taking place at Oasis Palace in Newark, California (35145 Newark Blvd, Newark, CA 94560).`
         },
         {
             question: 'What time is the wedding?',
-            answer: `On Saturday, the opening ceremony begins at 11AM. On Sunday, the opening ceremony begins at 2PM. Please check the schedule tab for other important timing related details for each day!`
+            answer: `On Saturday, the opening ceremony begins at 11AM. On Sunday, the opening ceremony begins at 2PM.`
         },
         {
             question: 'What time should I arrive?',
-            answer: `For both Saturday + Sunday we recommend that you aim to arrive about 15-30 minutes before the starting ceremonies to ensure you are seated on time! Please check the schedule tab for specific timing of when the ceremonies start for each day!`
+            answer: `For both Saturday + Sunday we recommend that you aim to arrive about 15-30 minutes before the starting ceremonies to ensure you are seated on time!`
         },
         {
             question: 'What is the dress code?',
@@ -51,15 +51,15 @@
         },
         {
             question: 'Where should I stay for the weekend?',
-            answer: `In order to accommodate all of our guest’s various accommodation preferences and budgets, we encourage you to check out our travel tab on our website! We have detailed a ton of information + recommendations on where to stay.`
+            answer: `We encourage you to check out our <a href='/travel' target='_blank'>travel</a> tab on our website! We have detailed a ton of information + recommendations on where to stay.`
         },
         {
             question: 'Will there be an open bar?',
-            answer: `For both Saturday and Sunday we have opted for an alcohol-free wedding, but are excited to offer all other drink types free of charge!`
+            answer: `For both Saturday and Sunday we have opted for an alcohol-free wedding. Additionaly, please refrain from bringing alcohol beverages as gifts!`
         },
         {
             question: 'I have a food allergy / preference. Can I make a special request?',
-            answer: `For both dates we will be offering options for those with allergies, sensitivities, and specified dietary restrictions so if you fall into any of these categories please indicate this in your RSVP so we can accommodate accordingly!`
+            answer: `Our hope is that our food options will accomodate most people's food preferences. There's an option on the RSVP page to indicate anything you'd like to share. We can't make any promises, but our hope is for everyone to have a good time!`
         },
         {
             question: 'How do I RSVP?',
