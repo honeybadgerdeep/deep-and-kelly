@@ -131,6 +131,10 @@ export var fashionOptions = {
                 {
                     description: 'Lehenga',
                     image: 'https://images.cbazaar.com/images/Deep-Green-Velvet-Embroidered-Sequins-A-Line-Lehenga-With-Dupatta-GHSDECB1008-u.jpg'
+                },
+                {
+                    description: 'Salwar Kameez',
+                    image: 'https://images.cbazaar.com/images/green-tussar-silk-embroidered-palazzo-suit-slska44869526-u.jpg'
                 }
             ],
             checkOutToBuy: [
