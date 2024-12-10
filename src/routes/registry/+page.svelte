@@ -15,7 +15,7 @@
                 <h2>Wedding Registry</h2>
             </div>    
         </a>
-        <a target='_blank' href='https://venmo.com/code?user_id=2583014085230592990&created=1732169421'>
+        <a target='_blank' href='https://withjoy.com/deep-and-sethi/registry'>
             <div class='card'>
                 <h2>Cash Fund</h2>
             </div>    

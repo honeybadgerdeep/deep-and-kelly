@@ -1,0 +1,75 @@
+#wedding-party-parent {
+    padding-top: 50px;
+
+    @media screen and (max-width: 768px) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-right: 150px;
+        padding-left: 150px;            
+    }
+
+    .wedding-party-group {
+        h3 {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+
+        .wedding-party-row {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: center;
+            margin-bottom: 50px;    
+
+            .wedding-party-member {    
+                font-weight: 300;
+                text-align: center;
+                transition: transform 0.2s, box-shadow 0.2s;
+                padding: 10px;
+                cursor: pointer;
+    
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }    
+
+            .wedding-party-member:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+        }    
+    }
+
+    .guest-details {
+        position: absolute;
+        height: 100vh;
+        overflow-y: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.7);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        color: white;
+        text-align: center;
+        padding-left: 300px;
+        padding-right: 300px;
+        font-size: 1.5em;
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
