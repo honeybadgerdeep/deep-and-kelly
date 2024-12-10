@@ -18,7 +18,7 @@ export var navLinks = [
     { 
         href: '/wedding-party', 
         label: 'wedding party', 
-        readyForPublic: true
+        readyForPublic: false
     },
     { 
         href: '/schedule', 
