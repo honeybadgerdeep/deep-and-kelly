@@ -7,7 +7,7 @@ export const weddingParty = [
     {
         name: 'Kyle Leathers',
         group: PartyType.Groomsmen,
-        relationship: 'Brother, Fellow Hooper-in-Arms',
+        relationship: 'Hooper-in-Arms',
         roleInWedding: 'Groomsman',
         howLongKnown: 'I’ve known Deep for slightly over 3 years',
         howMetOrAnecdote: 'Since moving to California, I had not played basketball with other people despite enjoying it a lot growing up and in undergraduate school. I was happy to learn that Deep loved basketball when I got to know him and he graciously offered to shoot with me. Beyond reigniting my joy in basketball, Deep helped to get larger groups together and build community spanning multiple friend groups. I’m fortunate to know Deep better from our time together and see him hit game winning shots in near dark conditions.',
@@ -29,7 +29,7 @@ export const weddingParty = [
         favoritePastaShape: 'Ziti',
         uselessTalent: 'I can bend the fingers in my left hand all the way back',
         childhoodCelebrityCrush: 'Anushka Sharma',
-        goToKaraokeSong: 'Don’t stop me now by Queen',
+        goToKaraokeSong: 'Don’t Stop Me Now by Queen',
         pictureName: 'sachit'
     },
     {
@@ -49,7 +49,7 @@ export const weddingParty = [
     {
         name: 'Lekkyes Dakwakas',
         group: PartyType.Groomsmen,
-        relationship: 'Brother, Fellow Commrade-in-Tech',
+        relationship: 'Commrade-in-Tech',
         roleInWedding: 'Groomsman',
         howLongKnown: 'Met July 7th, 2022 so that’s 2 years 4 months as of today',
         howMetOrAnecdote: 'A very rare moment in history where we get to both acknowledge that BODMAS is superior to PEMDAS ',
@@ -57,7 +57,7 @@ export const weddingParty = [
         favoritePastaShape: 'Anything thats not spaghetti or fettuccine is ghetto',
         uselessTalent: 'I can clap at 121 decibels (average clap is 80-90 decicels)',
         childhoodCelebrityCrush: 'Rihanna',
-        goToKaraokeSong: 'Uptown funk by Bruno Mars',
+        goToKaraokeSong: 'Uptown Funk by Bruno Mars',
         pictureName: 'lekkyes'
     },
     {

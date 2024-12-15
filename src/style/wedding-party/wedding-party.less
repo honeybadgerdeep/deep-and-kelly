@@ -1,5 +1,10 @@
 #wedding-party-parent {
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 
     @media screen and (max-width: 768px) {
         padding-right: 20px;
@@ -20,23 +25,67 @@
 
         .wedding-party-row {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            flex-wrap: wrap;
             gap: 50px;
-            justify-content: center;
-            margin-bottom: 50px;    
+            justify-content: center;    
 
             .wedding-party-member {    
                 font-weight: 300;
-                text-align: center;
                 transition: transform 0.2s, box-shadow 0.2s;
                 padding: 10px;
                 cursor: pointer;
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 20px;
+                border: 1px solid grey;
+                border-radius: 8px;
+
+                @media screen and (max-width: 568px) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                @media screen and (min-width: 768px) {
+                    max-width: fit-content;                    
+                }
+
     
                 img {
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 50%;
+                    width: 125px;
+                    height: 150px;
+                    border-radius: 12px;
                     object-fit: cover;
+
+                    &.Ryan {
+                        object-position: 0px 0px;
+                    }
+
+                    &.Sachit {
+                        object-position: 0px -35px;
+                    }
+
+                    &.Audrey {
+                        object-position: 0px 0px;
+                    }
+
+                    &.Ria {
+                        object-position: 0px -35px;
+                    }
+                }
+
+                .wedding-party-preview-info {
+                    p {
+                        @media screen and (max-width: 768px) {
+                            text-align: center;
+                        }
+
+                        @media screen and (min-width: 768px) {
+                            width: 250px;                            
+                            word-wrap: break-word;
+                        }
+
+                    }                            
                 }
             }    
 
@@ -48,28 +97,120 @@
     }
 
     .guest-details {
-        position: absolute;
+        position: fixed;
         height: 100vh;
-        overflow-y: auto;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         background: rgba(0,0,0,0.7);
+        display: flex;
         justify-content: center;
         align-items: center;
         z-index: 1000;
-        color: white;
         text-align: center;
-        padding-left: 300px;
-        padding-right: 300px;
-        font-size: 1.5em;
+        width: 100%;        
 
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
+        .guest-details-overlay {
+            position: relative;
+            max-width: 60%;
+            max-height: 500px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            overflow: hidden;
+            padding: 20px;
+            padding-right: 40px;
+            border-radius: 8px;
+
+            @media screen and (max-width: 768px) {
+                width: 90%;
+                overflow-y: auto;
+                align-items: center;
+            }            
+
+            .close-button {
+                position: absolute;
+                top: 1rem;
+                right: 0.5rem;
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+
+            .guest-details-items {
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                gap: 20px;
+                align-items: start;
+                justify-content: start;
+
+                .guest-details-image {
+                    display: flex;
+                    align-items: center;
+
+                    @media screen and (max-width: 768px) {
+                        height: 250px;
+                        max-width: 90%;
+                        margin: auto;
+                    }
+
+                    @media screen and (min-width: 768px) {
+                        height: 500px;
+                    }
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        margin-right: auto;
+                        margin-left: auto;
+        
+                        &.Ryan {
+                            object-position: 0px 0px;
+                        }
+
+                        &.Audrey {
+                            object-position: 0px 0px;
+                        }
+                    }
+                }
+
+                .guest-details-info {
+                    @media screen and (min-width: 768px) {
+                        max-height: 500px;
+                        overflow-y: auto;
+                    }
+    
+                    .wedding-party-row {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        align-items: center;
+        
+                        h3 {
+                            text-decoration: underline;
+                        }
+        
+                        p {
+                            margin: 0;
+                            font-weight: 400;
+        
+                            @media screen and (max-width: 768px) {
+                                max-width: 80%;
+                                font-size: 0.8em;
+                            }
+        
+                        }
+
+                    }
+                }    
+            }
         }
+
     }
 }
