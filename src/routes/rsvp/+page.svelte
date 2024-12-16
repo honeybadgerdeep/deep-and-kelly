@@ -171,7 +171,7 @@
                     <form on:submit={handleSubmit}>
                         <h3>{currentRsvpGuestEntry.guest.firstName} {currentRsvpGuestEntry.guest.lastName}</h3>
                         {#if currentRsvpGuestEntry.invitedToWestern}
-                            <label for="rsvp-attending-western">Will you be attending the western ceremony?</label>
+                            <label for="rsvp-attending-western">Will you be attending the Western ceremony?</label>
                             <span>
                                 <input id="rsvp-attending-western-yes" type="radio" bind:group={currentRsvpGuestEntry.western} value={true} />
                                 <label for="rsvp-attending-western-yes">Yes</label>
@@ -182,7 +182,7 @@
                             </span>
                         {/if}
                         {#if currentRsvpGuestEntry.invitedToIndian}
-                            <label for="rsvp-attending-indian">Attending you be attending the Indian ceremony?</label>
+                            <label for="rsvp-attending-indian">Will you be attending the Indian ceremony?</label>
                             <span>
                                 <input id="rsvp-attending-indian-yes" type="radio" bind:group={currentRsvpGuestEntry.indian} value={true} />
                                 <label for="rsvp-attending-indian-yes">Yes</label>
