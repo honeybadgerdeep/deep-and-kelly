@@ -23,8 +23,10 @@
 </script>
 
 <div>
-    <input class="filter" type="text" bind:value={filter} placeholder="Search by name..." />
-    <h2>{name} ({guestIds.length})</h2>
+    <div class="category-header">
+        <input class="filter" type="text" bind:value={filter} placeholder="Search by name..." />
+        <h2>{name} ({guestIds.length})</h2>
+    </div>
     <Separator />
     {#each Object.keys(guestsByGroup) as groupId}
         {#each guestsByGroup[groupId] as guestId}
