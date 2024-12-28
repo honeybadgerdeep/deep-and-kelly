@@ -3,7 +3,6 @@
     import Countdown from '../lib/components/CountdownTimer/Countdown.svelte';
     import EventDisplay from '$lib/components/EventDisplay.svelte';
     import { weddingInfo } from '$lib/data/weddingInfo';
-    import FianceHead from '$lib/components/FianceHead.svelte';
 </script>
 
 <svelte:head>

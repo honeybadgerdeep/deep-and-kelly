@@ -83,6 +83,23 @@ function createGuestStore() {
                 console.error('Error updating RSVP:', error);
                 return false;
             }
+        },
+        getGuests: async () => {
+            try {
+                const guestsRef = ref(db, 'guests');
+                const snapshot = await get(guestsRef);
+                if (snapshot.exists()) {
+                    const guests = [];
+                    const guestsData = snapshot.val();
+                    Object.entries(guestsData).forEach(([id, guest]) => guests.push({ id, ...guest }));
+                    set(guests);
+                } else {
+                    set([]);
+                }
+            } catch (error) {
+                console.error('Error getting guests:', error);
+                set([]);
+            }
         }
     };
 }
