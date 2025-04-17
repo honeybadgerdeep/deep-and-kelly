@@ -28,7 +28,7 @@ export var navLinks = [
     { 
         href: '/travel', 
         label: 'travel', 
-        readyForPublic: true 
+        readyForPublic: false
     },
     { 
         href: '/day-of-details', 
@@ -38,12 +38,12 @@ export var navLinks = [
     { 
         href: '/fashion', 
         label: 'fashion', 
-        readyForPublic: true 
+        readyForPublic: false 
     },
     { 
         href: '/faqs', 
         label: 'faqs', 
-        readyForPublic: true 
+        readyForPublic: false
     },
     { 
         href: '/gallery', 
@@ -53,12 +53,11 @@ export var navLinks = [
     { 
         href: '/registry', 
         label: 'registry', 
-        readyForPublic: true
+        readyForPublic: false
     },
     { 
         href: '/rsvp', 
         label: 'rsvp',
-        readyForPublic: true // TODO: Make this a coming soon page until invites are sent out
+        readyForPublic: false
     }
 ];
-
