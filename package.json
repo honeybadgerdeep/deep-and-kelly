@@ -17,6 +17,7 @@
 	"dependencies": {
 		"dropbox": "^10.34.0",
 		"firebase": "^11.0.2",
-		"less": "^4.2.0"
+		"less": "^4.2.0",
+		"tsparticles": "^3.8.1"
 	}
 }

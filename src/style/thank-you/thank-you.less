@@ -1,0 +1,184 @@
+body {
+    background-color: indianred;
+    @mandala-background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><g id="mandala"><g transform="translate(100,100)"><g transform="rotate(0)"><path d="M0,-50 Q25,-35 0,-20 Q-25,-35 0,-50" fill="yellow" opacity="0.3"/></g><g transform="rotate(60)"><path d="M0,-50 Q25,-35 0,-20 Q-25,-35 0,-50" fill="yellow" opacity="0.2"/></g><g transform="rotate(120)"><path d="M0,-50 Q25,-35 0,-20 Q-25,-35 0,-50" fill="yellow" opacity="0.3"/></g><g transform="rotate(180)"><path d="M0,-50 Q25,-35 0,-20 Q-25,-35 0,-50" fill="yellow" opacity="0.2"/></g><g transform="rotate(240)"><path d="M0,-50 Q25,-35 0,-20 Q-25,-35 0,-50" fill="yellow" opacity="0.3"/></g><g transform="rotate(300)"><path d="M0,-50 Q25,-35 0,-20 Q-25,-35 0,-50" fill="yellow" opacity="0.2"/></g></g></g></defs><use href="%23mandala" transform="scale(0.5) translate(50,50)"/></svg>');
+    background-image: @mandala-background;
+    background-repeat: repeat;
+    background-size: 100px 100px;
+    background-position-x: 0;
+    background-position-y: 0;
+    overflow-x: hidden;
+}
+
+#page-validation-form {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            width: 350px;
+            border: unset;
+            border-color: var(--accent-color);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            padding: 10px;
+            margin: 10px;
+            font-size: 1.2em;
+            font-weight: 300;
+
+            &.invalid-input {
+                border-color: red;                
+            }
+        }
+
+        input:active, input:focus {
+            outline: none;
+            border-width: 2px;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 200px;
+            font-size: 1.2em;
+            font-weight: 300;
+            margin-top: 15px;
+        }
+    }
+}
+
+#thank-you-message {
+    height: 100vh;
+    margin: auto;
+    width: calc(80vw - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #thank-you-message-box {
+        background-color: rgba(255, 255, 255, 0.6);
+        max-width: 100%;
+        border-radius: 6px;
+        border: 1px solid white;
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #view-pictures {
+        background: indianred;
+        color: white;
+        padding: 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+        cursor: pointer;
+        margin: auto;
+        font-size: 1.2em;
+        font-weight: 300;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        transition: background-color 0.2s, box-shadow 0.2s;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: darkred;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+        }
+    }
+}
+
+.thanks-divider {
+    margin: auto;
+    width: 40%;
+    height: 3px;
+    background-color: maroon;
+
+    &:before, &:after {
+        position: relative;
+        top: -10px;
+        content: '❋';
+        font-size: 1.5em;
+        transform: translateX(-50%);
+    }
+
+    &:after {
+        left: calc(50% + 5px);
+    }
+
+    &:before {
+        right: calc(50% + 5px);
+    }
+}
+
+.thanks-header {
+    text-align: center;
+    color: maroon;
+
+    h2, h3 {
+        text-transform: capitalize;
+    }
+
+    p {
+        color: black;
+        font-weight: bolder;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        text-align: left;
+        font-family: "Lobster", cursive;
+    }
+}
+
+#thank-you-group-pictures {
+    min-height: 100vh;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    color: indianred;
+}
+
+#thank-you-card-footer {
+    text-align: center;
+    background: darkred;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+    #cannot-wait {
+        font-size: 1.5em;
+        font-weight: 400;
+        color: white;
+    }
+
+    .thanks-divider {
+        background: gold;
+        color: gold;
+    }
+
+    #love-signed {
+        color: white;
+        font-size: 1.8em;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+}

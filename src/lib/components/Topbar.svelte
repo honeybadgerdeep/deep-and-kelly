@@ -14,8 +14,8 @@
     <a href='/'>Deep + Kelly</a>
     <div class="underline"></div>
     <nav>
-        {#each navLinks as {href, label, readyForPublic}}
-            {#if readyForPublic}
+        {#each navLinks as {href, label, readyForPublic, notOnMenu = false}}
+            {#if readyForPublic && !notOnMenu}
                 <a 
                     class={`nav-link ${isActive(href) ? 'active' : ''}`} 
                     href={href}

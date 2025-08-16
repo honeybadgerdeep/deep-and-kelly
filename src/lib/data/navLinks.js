@@ -59,5 +59,11 @@ export var navLinks = [
         href: '/rsvp', 
         label: 'rsvp',
         readyForPublic: false
+    },
+    {
+        href: 'thank-you',
+        label: 'thank you for coming!',
+        readyForPublic: true,
+        notOnMenu: true,
     }
 ];
