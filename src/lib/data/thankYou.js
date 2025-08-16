@@ -1,4 +1,4 @@
-const RAILWAYS_URL = 'https://api-production.b38b.up.railway.app';
+const RAILWAYS_URL = 'https://api-production-b38b.up.railway.app';
 
 export const grabImages = async (groupId, passphrase) => {
     try {
