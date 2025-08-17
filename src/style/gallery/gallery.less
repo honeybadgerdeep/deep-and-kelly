@@ -90,6 +90,27 @@
     backdrop-filter: blur(5px);
 }
 
+.lightbox-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;    
+}
+
+.lightbox-nav {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
 .lightbox-content {
     max-width: 90%;
     max-height: 90vh;

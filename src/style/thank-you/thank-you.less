@@ -67,6 +67,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 
     #thank-you-message-box {
         background-color: rgba(255, 255, 255, 0.6);
@@ -181,4 +193,13 @@ body {
         font-weight: 400;
         line-height: 1.5em;
     }
+}
+
+.error-message {
+    color: red;
+    font-weight: 400;
+    background: white;
+    vertical-align: middle;
+    padding: 20px;
+    text-align: center;
 }

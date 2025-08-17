@@ -4,6 +4,7 @@
     import '../../../style/gallery/gallery.less';
 
     export let photoSource = [];
+    export let randomize = false;
 
     let selectedPhoto = {
         name: '',
@@ -11,17 +12,23 @@
         alt: '',
     };
     let showLightbox = false;
+    let index = 0;
     let randomizedSequenceOfPhotos = [];
 
     onMount(() => {
-        randomizedSequenceOfPhotos = Array.from({ length: photoSource.length }).map((_, index) => index + 1);
-        for (let i = randomizedSequenceOfPhotos.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [randomizedSequenceOfPhotos[i], randomizedSequenceOfPhotos[j]] = [randomizedSequenceOfPhotos[j], randomizedSequenceOfPhotos[i]];
+        if (randomize) {
+            randomizedSequenceOfPhotos = Array.from({ length: photoSource.length }).map((_, index) => index + 1);
+            for (let i = randomizedSequenceOfPhotos.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [randomizedSequenceOfPhotos[i], randomizedSequenceOfPhotos[j]] = [randomizedSequenceOfPhotos[j], randomizedSequenceOfPhotos[i]];
+            }
+        } else {
+            randomizedSequenceOfPhotos = photoSource.map((_, index) => index + 1);
         }
     });
 
-    function openLightbox(index) {
+    function openLightbox(i) {
+        index = i;
         selectedPhoto = {
             name: `Photo ${index + 1}`,
             src: photoSource[index],
@@ -32,6 +39,22 @@
 
     function closeLightbox() {
         showLightbox = false;
+    }
+
+    function goLeft(e) {
+        e.stopPropagation();
+        if (index > 0) {
+            index--;
+            openLightbox(index);
+        }
+    }
+
+    function goRight(e) {
+        e.stopPropagation();
+        if (index < photoSource.length - 1) {
+            index++;
+            openLightbox(index);
+        }
     }
 </script>
 
@@ -71,8 +94,25 @@
         <div class="lightbox" on:click={closeLightbox}>
             <div class="lightbox-content">
                 <img src={selectedPhoto.src} alt={selectedPhoto.alt} />
-                <p>{selectedPhoto.name}</p>
+                <div class="lightbox-controls">
+                    <button
+                        class="lightbox-nav navigate-left"
+                        on:click={goLeft}
+                        disabled={index === 0}
+                    >
+                        <span>&#10094;</span>
+                    </button>
+                    <p>{selectedPhoto.name}</p>
+                    <button
+                        class="lightbox-nav navigate-right"
+                        on:click={goRight}
+                        disabled={index === photoSource.length - 1}
+                    >
+                        <span>&#10095;</span>
+                    </button>
+                </div>
             </div>
         </div>
     {/if}
 </div>
+
