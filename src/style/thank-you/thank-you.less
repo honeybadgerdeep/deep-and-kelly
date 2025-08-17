@@ -67,6 +67,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        width: calc(100vw - 100px);
+        height: unset;
+        min-height: 100vh;
+        padding: 25px 0;
+    }
     
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
@@ -162,6 +169,14 @@ body {
     background: white;
     text-align: center;
     color: indianred;
+
+    @media screen and (max-width: 768px) {
+        #gallery-box {
+            header {
+                display: none;
+            }
+        }
+    }
 }
 
 #thank-you-card-footer {
@@ -175,6 +190,11 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     gap: 10px;
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        max-width: 100%;
+    }
 
     #cannot-wait {
         font-size: 1.5em;

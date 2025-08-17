@@ -14,6 +14,7 @@
     const WRONG_LINK_ERROR = 'The link that you have used is invalid. Please use the link that was specifically sent to you by your host. If you are unable to find the link, please contact your host.'
     const INVALID_GROUP_KEY = 'The group key is invalid. Try again!';
     const STORAGE_KEY = 'groupKeyInfo';
+    const DEFAULT_MESSAGE = 'Your presence at our wedding made our special day even more magical. We are so grateful for the love, laughter, and beautiful memories you helped create.';
 
     // Reactive variables
     $: errorMessage = '';
@@ -25,7 +26,7 @@
     $: submitAttempted = false;
     $: readyToLoadPictures = false;
     $: cdnImages = [];
-    $: groupMessage = "Your presence at our wedding made our special day even more magical. We are so grateful for the love, laughter, and beautiful memories you helped create.";
+    $: groupMessage = DEFAULT_MESSAGE;
     $: isGroupKeyValid = false;
     $: inputClass = submitAttempted && !isGroupKeyValid ? 'invalid-input' : '';
     $: groupExistsInStorage = groupId ? !!getCachedGroupKey(groupId) : false;
@@ -209,7 +210,7 @@
                         <h2>Thank you for coming to our wedding!</h2>
                         <h3>With Hearts Full of Gratitude and Celebration</h3>
                         <div class='thanks-divider'></div>
-                        <p>{groupMessage}</p>
+                        <p id='group-message'>{groupMessage}</p>
                         <p>
                             Please enjoy these photos from our celebration as a token of our appreciation.
                         </p>
