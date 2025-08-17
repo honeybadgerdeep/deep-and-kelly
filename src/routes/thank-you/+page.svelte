@@ -207,8 +207,8 @@
             <div id='thank-you-message'>
                 <div id="thank-you-message-box">
                     <div class="thanks-header">
-                        <h2>Thank you for coming to our wedding!</h2>
-                        <h3>With Hearts Full of Gratitude and Celebration</h3>
+                        <h2>to our biggest supporters</h2>
+                        <h3>Thank you for coming to our wedding!</h3>
                         <div class='thanks-divider'></div>
                         <p id='group-message'>{groupMessage}</p>
                         <p>
